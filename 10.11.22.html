@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row {
+        height: 200px;
+        width: 700px;
+        background-color: rgb(139, 47, 47);
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cell {
+        height: 100%;
+        width: 40%;
+        background-color: rgb(139, 47, 47);
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    .item {
+        background-color: gold;
+        margin: 12px;
+        width: 40%;
+        height: 40%;
+
+    }
+
+    .first {
+        background-color: gold;
+    }
+
+    .long {
+        background-color: gold;
+        height: 30px;
+        width: 100%;
+    }
+
+    .dobble {
+        background-color: gold;
+        width: 45%;
+        height: 100px;
+
+
+    }
+
+    .last {
+        height: 150px;
+        width: 120px;
+        background-color: gold;
+        margin: auto;
+    }
+
+    .second {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .dobbleWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="cell">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="cell first"></div>
+        </div>
+        <div class="row">
+            <div class="second">
+                <div class="long"></div>
+                <div class="dobbleWrapper">
+                    <div class="dobble"></div>
+                    <div class="dobble"></div>
+                </div>
+            </div>
+            <div class="last"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
